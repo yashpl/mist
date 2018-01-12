@@ -143,7 +143,7 @@ ipc.on('backendAction_checkWalletFile', (e, path) => {
 
                     if (process.platform === 'freebsd' ||
                         process.platform === 'linux' ||
-                        process.platform === 'sunos') keystorePath += '/.ethereum/keystore';
+                        process.platform === 'sunos') keystorePath += '/.lancium/keystore';
 
                     if (process.platform === 'win32') keystorePath = `${Settings.appDataPath}\\Ethereum\\keystore`;
                 }

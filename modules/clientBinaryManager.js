@@ -12,11 +12,11 @@ const EventEmitter = require('events').EventEmitter;
 const log = require('./utils/logger').create('ClientBinaryManager');
 
 
-// should be       'https://raw.githubusercontent.com/ethereum/mist/master/clientBinaries.json'
-const BINARY_URL = 'https://raw.githubusercontent.com/ethereum/mist/master/clientBinaries.json';
+// should be       'https://raw.githubusercontent.com/ethereum/mist/master/clientBinaries.json' //changed for lancium
+const BINARY_URL = 'https://raw.githubusercontent.com/yashpl/mist/develop/clientBinaries.json';
 
 const ALLOWED_DOWNLOAD_URLS_REGEX =
-    /^https:\/\/(?:(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)?ethereum\.org\/|gethstore\.blob\.core\.windows\.net\/|bintray\.com\/artifact\/download\/karalabe\/ethereum\/)(?:.+)/;  // eslint-disable-line max-len
+    /^https:\/\/(?:(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)?github\.com\/|github.com\/yashpl\/go-ethereum\/tree\/master\/downloads\/|bintray\.com\/artifact\/download\/karalabe\/ethereum\/)(?:.+)/;  // eslint-disable-line max-len
 
 class Manager extends EventEmitter {
     constructor() {
